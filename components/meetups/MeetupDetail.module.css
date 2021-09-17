@@ -1,0 +1,8 @@
+.meetupdetail {
+  text-align: center;
+}
+
+.meetupdetail img {
+  width: 100%;
+  overflow: hidden;
+}
