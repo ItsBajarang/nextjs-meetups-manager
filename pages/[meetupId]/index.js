@@ -37,7 +37,8 @@ export const getStaticPaths = async () => {
   client.close();
 
   return {
-    fallback: false,
+    // blocking will not show anything until page pre-built
+    fallback: "blocking",
     paths: (await meetups).map((meetup) => {
       return {
         params: {
