@@ -46,7 +46,7 @@ export const getStaticProps = async () => {
         };
       }),
       //as getStaticProps only execute when we build our app, the revalidate helps to fetch data after every 10 seconds from the API, so that our app will be upto date with the database
-      revalidate: 1,
+      revalidate: 1, // pre-render after 1 sec
     },
   };
 };
